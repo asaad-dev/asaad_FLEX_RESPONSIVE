@@ -1,0 +1,74 @@
+body {
+    background: pink;
+    color: #fff;
+}
+/* flexbox permet d'aligner horizontalement ou verticalement dans un conteneur */
+
+.orange {
+    background: orange;
+}
+
+.olive {
+    background: olive;
+}
+
+.vert {
+    background: green;
+}
+
+.flex {
+    display: flex;
+    /* conteneur trop petit les div s'adptent à la largeur du parent  */
+    width: 300px;
+    /* si on dit flex-wrap: wrap; le 4e élément va en dessous */
+    /* flex-wrap: nowrap; est le comportement par défaut */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row-reverse; */
+
+    /* "justiy-content" différénte valeurs pour justifier les élément par défaiut : "flex-start", ou on a "flex-end" puis "center", ou "space-between" (center), ou "space-around" (autour) et space-evenly" (uniformément */
+    /* justify-content: space-evenly; */
+    /* si le parent à une hateur les enfants ont par défaut la hauteur du parent, qui est "stretch" (étiré) */
+    /* flex-start, ou flex-end ou center ou baseline (ligne de base des caractéres) */
+    /* height: 300px; */
+    /* align-items: baseline; */
+
+}
+
+/* toutes les div qui se situent dans la div parente qui est display: flex;  */
+.flex div {
+    width: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+/* .flex div:nth-child(2) {
+    height: 50px;
+}
+
+.flex div:nth-child(4) {
+    height: 150px;
+    font-size: 4em;
+} */
+
+    /* l'order utile en responsive */
+
+/* .flex div:first-child {
+    font-size: 4em; 
+    order: 4;
+    align-self: flex-end;
+} */
+
+/* flex-grow VOTRE */
+/* .flex div:nth-child(3) {
+    flex-grow: 10;
+} */
+
+.flex div:nth-child(1) {
+    flex-shrink: 10;
+}
+
+.flex div:nth-child(3) {
+    flex-shrink: 10;
+}
+

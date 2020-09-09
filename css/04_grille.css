@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+}
+.conteneur {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.row p {
+    border-radius: 7px;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Définition de la largeur des colonnes en % */
+.col-1 {
+    width: 8.333333%;
+    padding: 4px;
+}
+.col-2 {
+    width: 16.666666%;
+    padding: 4px;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666666%;
+}.col-6 {
+    width: 50%;
+
+}
+.col-7 {
+    width: 58.333333%;
+
+}
+.col-8 {
+    width: 66.666666%;
+
+}
+.col-9 {
+    width: 75%;
+
+}
+.col-10 {
+    width: 83.333333%;
+
+}
+.col-11 {
+    width: 91.666666%;
+
+}
+.col-12 {
+    width: 100%;
+
+}
+

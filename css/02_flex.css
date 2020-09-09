@@ -1,0 +1,27 @@
+body {
+    background: pink;
+    color: #fff;
+}
+/* flexbox permet d'aligner horizontalement ou verticalement dans un conteneur */
+
+.orange {
+    background: orange;
+}
+
+.olive {
+    background: olive;
+}
+
+.vert {
+    background: green;
+}
+
+.flex {
+    display: flex;
+    /* row rangée */
+    flex-direction: column-reverse;
+}
+
+.flex div {
+    padding: 5px;
+}

@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #ccc;
+}
+
+.orange {
+    background: orange;
+    color: #fff;
+}
+
+section {
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;  
+}
+/* chaque colonne occupe donc 1 / (1 + 1 + 1) soit 1/3 ou 1 / (1 + 1 + 1) soit 1/4*/
+.column {
+    margin: 10px;
+    border: 1px solid #000;
+    /* dégrandé de couleur */
+    background: linear-gradient(#e66465, #4050ff, rgb(117, 252, 146));
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+/* .column:first-of-type {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 0;
+  } */
+
+  section:first-of-type .column:first-of-type {
+      flex-grow: 2;
+      flex-shrink: 2;
+      flex-basis: 22px;
+  }
+  .type {
+      flex: 2 2 2;
+  }

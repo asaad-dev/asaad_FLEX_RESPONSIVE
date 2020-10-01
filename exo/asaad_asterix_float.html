@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astérix le Gaulois</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #conteneur {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .code {
+            background: #E0FFFF;
+        }
+
+       /* en- téte de page */
+        header {
+            /* width: 100%; */
+            /* height: 160px; */
+            background: #EEE12D;
+            padding: 30px;
+            color: #fff;
+            text-align: center;
+            font-size: 35px;
+        }
+        /* header p {
+            padding-top: 20px;
+        } */
+        main {
+            width: 70%;
+            height: 300px;
+            background: #F1F1F1;
+            float: right;
+            padding: 20px;
+        }
+
+        aside {
+            width: 30%;
+            height: 300px;
+            background: #CCCCCC;
+            float: left;
+            padding: 20px;
+        }
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        footer {
+            width: 100%;
+            height: 70px;
+            background: #EEE12D;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        .clear {
+            clear: both;
+            margin-bottom: 0;
+        }
+
+        /* media queries */
+    
+        @media (max-width: 600px) {
+           main, aside {
+                width: 100%;
+                float: none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+        <h2>HTML CSS : une maquette responsive en float</h2>
+        <p>Dans cet exemple, nous avons un en-tête, 2 colonnes/boites et un pied de page</p>
+        <p>Sur un écran inférieur à 600px les colonnes se placeront les unes au dessus des autres</p>
+        <p>Redimensionnez la fenétre pour voir les colonnes qui se placent qui se placent les unes au dessus des autres</p>
+
+        <header>
+            <h2>Astérix le Gaulois</h2>
+        </header>
+
+        <main>
+            <p class="code">indications :<code>&it;article :</code>  70%</p>
+            <h2>Astérix</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque, magni nobis est architecto dolore ullam nostrum voluptates fuga harum incidunt quidem soluta laboriosam ipsum aut, quos eos beatae? Pariatur?</p>
+        </main>
+
+        <aside>
+            <p class="code"><span>indications <code>&it;nav:</code> 30%</span></p>
+            <nav>
+                <ul>
+                    <li><a href="#">Astérix</a></li>
+                    <li><a href="#">Obélix</a></li>
+                    <li><a href="#">Panoramix</a></li>
+                    <li><a href="#">Bonemine</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="clear"></div>
+
+        <footer>
+            <p>Pied de page</p>
+        </footer>
+    </div>
+
+</body>
+</html>

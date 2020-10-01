@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tintin</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #conteneur {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+        }
+        h2, h3 {
+            font-size: 36px;
+        
+        }
+        p, ul {
+            list-style: none;
+            padding: 10px;
+        }
+
+        header {
+            width: 100%;
+            background: #5BCCD6;
+            color: #fff;
+            text-align: center;
+        }
+        aside {
+            width: 30%;
+            background: #469BA3;
+
+        }
+        main {
+            width: 70%;
+            background: #A1D8DD;
+        }
+
+        footer {
+            width: 100%;
+            background: #255357;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* media queries */
+        @media (min-width: 321px) and (max-width: 600px) {
+        
+           section {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            main {
+                width: 100%;
+                color: #fff;
+                background: #A1D8DD;
+                /* height: 200px; */
+            }
+            aside {
+                width: 100%;
+                background: #fff;
+                /* font-size: 30px; */
+                /* height: 200px; */
+            }
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+        <h1>HTML CSS : une maquette reponsive en felx</h1>
+        <p>Dans cet exemple nous avons un en-tête, 2 colonnes/boites et un pied de page <br> Sur un écran inférieur à 600px les colonnes se placeront les unes au dessus des autres</p>
+        
+        <header>
+            <h2>Les aventures de Tintin</h2>
+        </header>
+        <!-- fin de en tête -->
+
+        <section>
+                <aside>
+                    <ul>
+                        <li><a href="#">Tintin</a></li>
+                        <li><a href="#">Le Capitaine Haddock</a></li>
+                        <li><a href="#">Milou</a></li>
+                        <li><a href="#">Le Professeur</a></li>
+                    </ul>
+                </aside>
+            
+                <main>
+                    <h3>Tintin</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus sit quod? Harum repellat enim esse debitis earum ipsa iste sapiente! Maiores consequatur provident sapiente sed natus beatae necessitatibus in?</p>
+                </main>
+        </section>
+        <!-- fin de section principale -->
+
+        <footer>
+            <p>Pied de page</p>
+        </footer>
+    </div>
+    <!-- fin de conteneur principale -->
+</body>
+</html>
